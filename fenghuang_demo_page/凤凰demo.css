@@ -1,0 +1,90 @@
+/*css初始化*/
+body,ol,ul,li,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,a{margin:0;padding:0} 
+body{font:12px"宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;} 
+a{color:#5555ff;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:underline} 
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word} 
+.clear{clear: both;}
+
+/***********************样式设置***********************/
+
+/*头部样式*/
+header{width: 80%;margin: 10px 11%;position: relative;}
+header img{width: 130px;height: 46px;cursor: pointer;}
+header ul{display: inline-block; position: absolute;bottom: 0px;right: 50px;}
+header ul a{display:inline-block; font-size: 14px;color: #666666; margin-right: 10px;}
+/*头部样式*/
+
+/*导航样式*/
+nav{width: 100%; background-color: #FF3333;}
+nav ul{margin:0 10%;}
+nav ul li{display: inline-block;float: left;padding: 10px 11px;
+	      border-left: 1px solid #888888;}
+nav ul a{font-size: 17px; color: #fff;}	
+nav ul a:hover{color: #fff;}
+
+#nav-2{width: 80%;margin: 0 10%;}
+#nav-2 ul{margin:0 5px;height: 30px;}
+#nav-2 ul li{float: left; height: 12px;
+	         border-right: 1px solid #AAAAAA;margin: 10px 0; padding: 0 7px;}
+#nav-2 ul a{display:inline-block; font-size: 15px;color: #444444;margin-top: -10px;}
+#nav-2 ul a:hover{color: #ff0000;text-decoration: none;}
+/*导航样式*/
+
+/*导航底部广告*/
+#nav-bottom-ad{width: 980px;padding:10px; margin-left:12%; background-color: #DDDDDD;}
+
+/*wrapper*/
+#wrapper{width: 80%;margin: 10px 10%;position: relative;}
+
+/*aside*/
+aside{width: 20%;border: 1px solid #DDDDDD; }
+.aside-box{width: 90%; margin: 10px 5%; border-bottom: 1px solid #DDDDDD; padding: 10px 0;}
+.aside-box p{color: #AAAAAA;}
+.aside-box h2{display: inline-block;font-size: 14px;}
+.aside-box h2 a{ color: #444444;}
+.aside-box img{float: right;margin-right: -3px; margin-top: -2px;}
+.aside-box a{line-height: 20px;display: block;font-size: 12px}
+
+/*插入广告*/
+#insert-ad{margin-top: 10px;width:200px;display: inline;padding: 0 10px;background-color: #DDDDDD;}
+
+/*主要新闻*/
+#main-news{width: 75%;padding: 10px 10px;position: absolute;top: 10px; left: 23%;}
+section{width: 48%;}
+#section-box{width: 100%;}
+#section-box h2{display: inline; font-size: 14px;}
+section ul h2{font-size: 15px;}
+section ul{line-height: 25px;}
+section ul li a{line-height: 23px;font-size: 15px;color: #009fcc;}
+
+/*猜你喜欢*/
+#you-like{width: 45%;padding: 10px 10px 10px 0;margin-top: 20px;border-top: 1px solid #DDDDDD;}
+#you-like h2{font-size: 15px;font-weight: normal;}
+#you-like ul li a{line-height: 25px;font-size: 15px;color: #009fcc;}
+
+
+/*咨询图*/
+#zixun{width: 361px;position: absolute;top: 10px; right: 10px;padding: 0 10px;cursor: pointer;}
+
+/*视频*/
+#news-video{position: absolute;width: 381px;right: 0px; top: 280px;}
+#shipin h2{display: inline;font-weight: normal;font-size: 15px;}
+#shipin img{float: right;cursor: pointer;}
+#shipin{ width: 361px; border-bottom: 1px solid #DDDDDD;padding-bottom: 10px;margin-bottom: 10px;}
+
+#shipin-list h2 {font-size: 15px;}
+#shipin-list{position: relative;}
+#shipin-list-img{display: inline-block;}
+#shipin-list-img img{display: block; margin-top: 10px; cursor: pointer;}
+#shipin-list-title{display: inline-block;position: absolute; top: 25px;left: 130px;}
+#shipin-list-title ul li{line-height: 25px;font-size: 15px;}
+
+#shipin-list-title-2{margin-top: 10px;}
+#shipin-list-title-2 ul li a{font-size: 15px;line-height: 25px;}
+
+
