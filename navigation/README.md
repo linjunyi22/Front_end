@@ -2,6 +2,4 @@
 
 jQuery实现网页内部定位导航
 
-预览：https://linjunyi22.github.io/Navigation/index.html
-
 根据滚动条距顶部的高度(scrollTop)与左侧商品楼层距顶部高度(offset().top)进行比较，当前者比后者大的时候，取前者楼层的ID值，并与导航栏比较，取消导航栏非对应楼层特效，给对应楼层增加特效。
