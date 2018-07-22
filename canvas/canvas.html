@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- <img src="/Users/linjunyi/Downloads/pap.er/test.jpg" alt="" style="display: none" id="img"> -->
+  <canvas id="canvas" width="400" height="400" style="border: 1px solid #000000;"></canvas>
+
+  <script>
+    var canvas = document.getElementById('canvas'),
+      ctx = canvas.getContext('2d');
+
+    var img = new Image();
+    img.src = "/Users/linjunyi/Downloads/pap.er/football.jpg";
+    img.onload = function () {
+      ctx.drawImage(img, 0, 0);
+    }
+
+    var log = console.log
+
+    // $("#canvas").click(function (e) {
+    //   var x = e.offsetX,
+    //       y = e.offsetY;
+
+    //   log(x,y)
+    //   $("#canvas").mousemove(function(e){
+    //     ctx.beginPath();
+    //     ctx.lineWidth = '3';
+    //     ctx.strokeStyle = 'red';
+    //     ctx.moveTo(x,y);
+        
+    //     $("#canvas").click(function(e){
+    //       ctx.lineTo(e.offsetX,e.offsetY);
+    //       ctx.stroke();
+    //     })
+        
+    //   });
+    // });  
+    var x = 0,
+        y = 0,
+        flag = false;
+
+    var draw = function(begin_x,begin_y,end_x,end_y){
+        ctx.arc(end_x,end_y,5,0,2*Math.PI);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.lineWidth = '2';
+        ctx.strokeStyle = 'red';
+        ctx.moveTo(begin_x,begin_y);
+        
+        if (falg) {
+            ctx.lineTo(end_x,end_y);
+            ctx.stroke();
+        };
+        flag = true;
+    }
+
+
+    $("#canvas").on({
+        click:function(e){
+          x = e.offsetX;
+          y = e.offsetY;
+
+        }
+        mousedown:function(e){
+          // console.log(x,y)
+        //   ctx.beginPath();
+        //   ctx.lineWidth = '1';
+        //   ctx.strokeStyle = 'red';
+        //   ctx.arc(x,y,10,0,2*Math.PI);
+        //   ctx.moveTo(x,y);
+        //   // if (x!=0 && y!=0) {
+        //     ctx.lineTo(e.offsetX,e.offsetY);
+        //   // }
+        //   if (flag) {
+        //     ctx.stroke();
+        // }
+        // flag = true;
+        // }
+    })
+
+  </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
