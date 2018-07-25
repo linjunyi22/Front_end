@@ -23,10 +23,12 @@
 		})
 
 		$("#btn2").click(function(){
-			$.get("/getdata", {hello:"nice"}, function(result){
+			setInterval(function(){
+				$.get("/getdata", {hello:"nice"}, function(result){
 				$(".box").html(result['halo']).css('background-color','#ac1234').show(500);
 				$("#btn2").css('height','300').hide(1000);
 			})
+			},1000)
 		})
 
 	</script>
