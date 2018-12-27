@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>button</title>
+	<script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.bootcss.com/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+	<style>
+		.t{
+			margin:5px;
+			padding: 5px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="box"></div>
+
+	<script type="text/javascript">
+		let log = console.log
+		let tmp = ''
+		for(let i = 0;i < 100;i++){
+			tmp += '<button class="t btn-primary">' + String(i) + "</button>"
+		}
+
+		$("#box").append(tmp)
+
+		let color = ['btn','btn btn-success','btn btn-primary','btn btn-info', 'btn btn-danger','btn btn-warning','btn btn-dark','btn btn-light','btn btn-link','btn btn-secondary']
+
+		let size = 1;
+		let vv = setInterval(function(){
+			size += 1
+			$(".t").each(function(){
+				let that = $(this)
+				for(let i in color){
+                    that.removeClass(color[i])
+                }
+                if (size == 50) {
+                	clearInterval(vv)
+                }
+                let c = color[parseInt(Math.random()*10)]
+                that.addClass(c)
+                that.text(c)
+                that.css('fontSize',String(size) + 'px')
+			})
+		},500)
+		
+
+
+	</script>
+</body>
+</html>
