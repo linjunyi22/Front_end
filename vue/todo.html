@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue learning</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="content">
+        <button @click="submit">submit</button>
+
+        <ul>
+            <li v-for="item of list">{{ item }}</li>
+        </ul>
+    </div>
+
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+                content:'',
+                list:[]
+            },
+            methods:{
+                submit:function(){
+                    if (this.content && !this.list.includes(this.content)) {
+                        this.list.push(this.content);
+                        this.content = '';
+
+                    }else{
+                        console.log('please input text and don"t input repeated words which already existed in list.');
+                    }
+                    
+                }
+            }
+        })
+    </script>
+</body>
+</html>
